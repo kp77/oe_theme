@@ -21,7 +21,9 @@ use Drupal\oe_theme\ValueObject\GalleryItemValueObject;
 function oe_theme_preprocess(&$variables) {
   global $base_url;
   $theme = \Drupal::theme()->getActiveTheme();
-  $variables['ecl_icon_path'] = $base_url . '/' . $theme->getPath() . '/dist/images/icons/sprites/icons.svg';
+  $variables['ecl_images_path'] = $base_url . '/' . $theme->getPath() . '/dist/images';
+  $variables['ecl_icon_path'] = $variables['ecl_images_path'] . '/icons/sprites/icons.svg';
+  $variables['ecl_logo_path'] = $variables['ecl_images_path'] . '/logo';
 }
 
 /**
