@@ -75,6 +75,7 @@ pipeline:
       - ./vendor/bin/phpunit --filter ImageValueObjectTest
       - ./vendor/bin/phpunit --filter PagerTest
       - ./vendor/bin/phpunit --filter ParagraphsTest::testAccordions
+      - ./vendor/bin/phpunit --filter ParagraphsTest::testContextualNavigation
       - ./vendor/bin/phpunit --filter ParagraphsTest::testQuote
       - ./vendor/bin/phpunit --filter RenderingTest::testRendering
       - ./vendor/bin/phpunit --filter SearchFormBlockTest
