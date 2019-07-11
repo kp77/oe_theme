@@ -52,7 +52,7 @@ class LanguageSwitcherTest extends MultilingualAbstractKernelTestBase {
    * @param string $lang_prefix
    *   The language prefix.
    *
-   * @todo Adjust this function after implementation of Language switcher in page header.
+   * @todo Adjust this function after implementation of Language switcher in page header (OPENEUROPA-2013).
    *
    * @dataProvider renderingDataProvider
    */
