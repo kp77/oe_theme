@@ -6,8 +6,12 @@
  * @see ./modules/contrib/paragraphs/templates/paragraph.html.twig
  */
 #}
-<div class="ecl-row">
-  <div class="ecl-col-md-12">
-    {{ content.field_oe_paragraphs }}
+{% for row in rows %}
+  <div class="ecl-row">
+    {% for column in row.columns %}
+      <div class="ecl-col-md-{{ column.width }}">
+        {{ column.content }}
+      </div>
+    {% endfor %}
   </div>
-</div>
+{% endfor %}
